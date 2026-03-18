@@ -12,7 +12,7 @@ int main(){
     num1 + num2 = resultado 
     */
 
-    int num1, num2, resultado; // nesta parte criamos as variaveis sem atribuir valor a sellas, mas no C e nessesario definir seu tipo na hora da criação
+    int num1, num2, resultado; // nesta parte criamos as variaveis sem atribuir valor a elas, mas no C e nessesario definir seu tipo na hora da criação
     printf("Disgite um numero: "); // printf imprime o texto no terminal
     scanf("%d", &num1); // scanf pega o que for digitado no terminal e guarda na variavel
     printf("Disgite outro numero: ");
