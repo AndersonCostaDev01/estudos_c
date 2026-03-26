@@ -23,7 +23,9 @@ int main(){
     int quantidade = 10;
     float altura = 1.72;
     char letra = 's';
-    char nome[50] = 'Anderson';
+    char nome[250] = "Anderson";
+
+    printf("Ola 2");
 
     return 0;
 }
