@@ -12,13 +12,13 @@ float nota1, nota2, nota3;
 
 void entradaDados()
 {
-    printf("digite a primeira nota: ");
+    printf("Digite a primeira nota: ");
     scanf("%f", &nota1);
 
-    printf("digite a segunda nota: ");
+    printf("Digite a segunda nota: ");
     scanf("%f", &nota2);
 
-    printf("digite a terceira nota: ");
+    printf("Digite a terceira nota: ");
     scanf("%f", &nota3);
 }
 
