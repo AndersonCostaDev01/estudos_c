@@ -24,7 +24,17 @@ int main()
         char var[25];
         strcpy(var, arrChar[i]); // para atribuir um char[] ao uma variavel e nessesario esta biblioteca <string.h>
         printf("%s - ", var);
-    }
+    };
+
+    int teste[10] = {};
+    int tamanhoTeste = sizeof(teste) / sizeof(teste[0]);
+    printf("\nTamanho teste: %d\n", tamanhoTeste);
+
+    for(int i = 1; i-1 < tamanhoTeste; i++) {
+        teste[i] = i * i;
+        int var = teste[i];
+        printf("%d - ", var);
+    };
 
     return 0;
 }
