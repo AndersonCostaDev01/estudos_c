@@ -29,6 +29,7 @@ int main()
     int teste[10] = {};
     int tamanhoTeste = sizeof(teste) / sizeof(teste[0]);
     printf("\nTamanho teste: %d\n", tamanhoTeste);
+    printf("tamanho de teste em bit:: %d\n", sizeof(teste));
 
     for(int i = 1; i-1 < tamanhoTeste; i++) {
         teste[i] = i * i;
