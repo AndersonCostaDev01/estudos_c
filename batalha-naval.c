@@ -86,10 +86,44 @@ int main() {
     // ==========================================
     for(int i = 0 ; i < LINHA ; i++) {
         for(int e = 0 ; e < COLUNA ; e++) {
-            printf("%d ", tabuleiro[i][e]);
+            printf("%d ", 0);
         };
         printf("\n");
     };
+
+    int win = 0;
+    int atac1, atac2;
+    while (win == 0)
+    {
+        printf("Digite seus ataques 1 e 2\n");
+        printf("Posicao ataque 1: ");
+        scanf("%d", &atac1);
+        printf("Posicao ataque 2: ");
+        scanf("%d", &atac2);
+
+        for(int i = 0 ; i < LINHA ; i++) {
+            for(int e = 0 ; e < COLUNA ; e++) {
+                if(tabuleiro[i][e] == 1){
+                    printf("%d ", 0);
+                }else{
+                    printf("%d ", tabuleiro[i][e]);
+                }
+            };
+            printf("\n");
+        };
+        
+        if(tabuleiro[atac1][atac2] == 0){
+            tabuleiro[atac1][atac2] = 3;
+        } else if (tabuleiro[atac1][atac2] == 3)
+        {
+            printf("\nCasa ja escolhida, tente novamente\n");
+        } else {
+            printf("\nVoce acertou uma embarcação PARABENS;\n");
+            win++;
+        }
+        
+    };
+    
     
     return 0;
 }
